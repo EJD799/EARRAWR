@@ -1,0 +1,31 @@
+<style>
+  * {
+    font-family: 'Segoe UI Variable', 'Google Sans', 'Segoe UI', 'SF Pro Sans', 'Century Gothic', 'Helvetica', sans-serif;
+  }
+  body {
+    color: white;
+    background: red;
+  }
+</style>
+<!--<h1>Error</h1>
+<p>This game is currently unavailable due to an EARRAWR Code of Conduct violation. It will be brought back online soon.<br>[Taken down by EJD799 on 5/18/2023 at 1:37 PM] [Violation: Part 1A]</p>
+<button onclick="location = '/';">Go Back</button>-->
+<h1>WARNING</h1>
+<p>This content is designed for ages 10+. If you are under 10 years of age, please press "Cancel" or press your browser's back button now. Press "Continue Now" to play now.</p>
+<br>
+<span>You will be redirected in </span>
+<span id="time">5</span>
+<span> seconds</span>
+<br>
+<button onclick="location = '/games/civilwar.html';">Continue Now</button>
+<button onclick="location = '/';">Cancel</button>
+<script>
+  var time = document.getElementById("time");
+  window.setTimeout("time.innerHTML = '4';", 1000);
+  window.setTimeout("time.innerHTML = '3';", 2000);
+  window.setTimeout("time.innerHTML = '2';", 3000);
+  window.setTimeout("time.innerHTML = '1';", 4000);
+  window.setTimeout("time.innerHTML = '0';location='/games/civilwar.html';", 5000);
+</script>
+<h2>Violation history</h2>
+<p>This game has been unavailable in the past due to an EARRAWR Code of Conduct violation.<br>[Restored by EJD799 on 5/22/2023 at 11:58 PM] [Taken down by EJD799 on 5/18/2023 at 1:37 PM] [Violation: Part 1A] [Violation caused by 215645YS on null/null/nullnullnullnull at nullnull:nullnull null]</p>

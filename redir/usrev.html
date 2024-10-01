@@ -1,0 +1,26 @@
+<style>
+  * {
+    font-family: 'Segoe UI Variable', 'Google Sans', 'Segoe UI', 'SF Pro Sans', 'Century Gothic', 'Helvetica', sans-serif;
+  }
+  body {
+    color: white;
+    background: red;
+  }
+</style>
+<h1>WARNING</h1>
+<p>This content is designed for ages 10+. If you are under 10 years of age, please press "Cancel" or press your browser's back button now. Press "Continue Now" to play now.</p>
+<br>
+<span>You will be redirected in </span>
+<span id="time">5</span>
+<span> seconds</span>
+<br>
+<button onclick="location = '/games/usrev.html';">Continue Now</button>
+<button onclick="location = '/';">Cancel</button>
+<script>
+  var time = document.getElementById("time");
+  window.setTimeout("time.innerHTML = '4';", 1000);
+  window.setTimeout("time.innerHTML = '3';", 2000);
+  window.setTimeout("time.innerHTML = '2';", 3000);
+  window.setTimeout("time.innerHTML = '1';", 4000);
+  window.setTimeout("time.innerHTML = '0';location='/games/usrev.html';", 5000);
+</script>

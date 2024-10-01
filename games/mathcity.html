@@ -1,0 +1,12 @@
+<title>Redirect - EARR Learning</title>
+<h1>Redirect</h1>
+<p>Math Cities has been replaced with Stoneville! You will be redirected in</p>
+<span id="time" style="color:red;">3</span>
+<p>seconds.</p>
+<button onclick="location = 'forcemathcity.html';">Play Math Cities anyway</button>
+<script>
+  var time = document.getElementById("time");
+  window.setTimeout("time.innerHTML = '2';", 1000);
+  window.setTimeout("time.innerHTML = '1';", 2000);
+  window.setTimeout("time.innerHTML = '0';location='stoneville.html';", 3000);
+</script>

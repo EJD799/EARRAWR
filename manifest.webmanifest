@@ -1,0 +1,82 @@
+{
+    "theme_color": "#fff",
+    "background_color": "#fff",
+    "display": "browser",
+    "display_override": ["tabbed"],
+    "scope": "/",
+    "start_url": "/",
+    "name": "EARRAWR",
+    "short_name": "EARRAWR",
+    "icons": [
+        {
+            "src": "/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/maskable_icon.png",
+            "sizes": "500x500",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "shortcuts": [
+      {
+        "name": "Home",
+        "short_name": "Home",
+        "description": "EARRAWR Homepage",
+        "url": "/"
+      },
+      {
+        "name": "EARRAWR Creator",
+        "short_name": "Creator",
+        "description": "EARRAWR Creator Launcher",
+        "url": "/creator/"
+      },
+      {
+        "name": "MathCraft Launcher",
+        "short_name": "MathCraft",
+        "description": "MathCraft Launcher",
+        "url": "/redir.html?url=https://mathcraft.ejd799.repl.co"
+      },
+      {
+        "name": "Math Trains",
+        "short_name": "Math Trains",
+        "description": "Math Trains",
+        "url": "/games/mathtrains.html"
+      },
+      {
+        "name": "Stoneville",
+        "short_name": "Stoneville",
+        "description": "Stoneville",
+        "url": "/games/stoneville.html"
+      },
+      {
+        "name": "Count the Change",
+        "short_name": "Count the Change",
+        "description": "Count the Change",
+        "url": "/games/countchange.html"
+      },
+      {
+        "name": "Math Tic-Tac-Toe",
+        "short_name": "Math TTT",
+        "description": "Math Tic-Tac-Toe",
+        "url": "/games/mathttt.html"
+      }
+    ]
+}

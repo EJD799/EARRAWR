@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EARRAWR - Learning Games</title>
+  <link rel="icon" type="image/x-icon" href="/icons/icon.ico">
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+
+<body>
+  <script src="/nanobar.min.js"></script>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      color: black;
+      /*padding: 7px;*/
+    }
+    .bodyDiv {
+      padding: 7px;
+      width: 100%;
+      height: 100%;
+    }
+    .btn {
+      background-color:dodgerblue;
+      border-radius:6px;
+      border:none;
+      padding:10px;
+      width:150px;
+      color:white;
+      font-size:18px;
+      transition: background-color 0.1s;
+    }
+    .btn:hover {
+      background-color: #59acff;
+      cursor: pointer;
+    }
+    .btn:active {
+      background-color: #1a7bdb;
+    }
+    .menuItem {
+      background-color:white;
+      border-radius:6px;
+      border:none;
+      padding:10px;
+      width:150px;
+      color:black;
+      font-size:18px;
+      transition: background-color 0.1s;
+    }
+    .menuItem:hover {
+      background-color: lightgray;
+      cursor: pointer;
+    }
+    .menuItem:active {
+      background-color: gray;
+    }
+    .btn-disabled {
+      background-color:lightgray;
+      border-radius:6px;
+      border:none;
+      padding:10px;
+      width:150px;
+      color:dimgray;
+      font-size:18px;
+      transition: background-color 0.1s;
+    }
+    h2 {
+      font-family:'sans-serif';
+    }
+    p {
+      font-family:'sans-serif';
+    }
+    .new-tag {
+      background-image: linear-gradient(to left, dodgerblue, blue, rebeccapurple);
+      border-radius: 6px;
+      color: white;
+      font-family: sans-serif;
+      padding: 5px;
+    }
+.my-class .bar {
+  background:#f04c78;
+}
+  </style>
+
+  <nav class="navbar is-fixed-top has-shadow" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/">
+      <img src="/icons/wide_light.png" width="80" height="50">
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item is-tab is-active" href="/">
+        Games
+      </a>
+      <a class="navbar-item is-tab" href="/creator">
+        EARRAWR Creator
+      </a>
+    </div>
+  </div>
+</nav>
+<article class="message is-primary">
+  <div class="message-header">
+    <p>ATTENTION</p>
+  </div>
+  <div class="message-body">
+  If you have installed the app, you will need to reinstall it for the new app shortcuts to work!
+  </div>
+</article>
+  <div class="bodyDiv">
+        <div class="card">
+  <header class="card-header">
+    <p class="card-header-title">
+      MathCraft <span style="color:blue;">[POPULAR]</span>
+    </p>
+  </header>
+  <div class="card-content">
+    <div class="content">
+      Various Minecraft recreations, but with math! Very likely for people to love this game! (Subjects: Multiplication, and some versions have Spelling)
+    </div>
+  </div>
+  <footer class="card-footer">
+    <a href="javascript:window.open('https://mathcraft.e-j-d.com')" class="card-footer-item">Open Launcher</a>
+  </footer>
+</div>
+    <br>
+        <div class="card">
+  <header class="card-header">
+    <p class="card-header-title">
+      Math Trains <span style="color:purple;">[NEW]</span>
+    </p>
+  </header>
+  <div class="card-content">
+    <div class="content">
+      Drive a train while answering math problems (Subjects: Multiplication)
+    </div>
+  </div>
+  <footer class="card-footer">
+    <a href="/games/mathtrains.html" class="card-footer-item">Play</a>
+  </footer>
+</div>
+    <br>
+<div class="card">
+  <header class="card-header">
+    <p class="card-header-title">
+      Operations
+    </p>
+  </header>
+  <div class="card-content">
+    <div class="content">
+      A numbers game where you have to get a number by only adding, multiplying, subtracting, and dividing single digit numbers and previous answers! (Subjects: Addition, Subtraction, Multiplication, Division, Logic)
+    </div>
+  </div>
+  <footer class="card-footer">
+    <a href="/games/operations.html" class="card-footer-item">Play</a>
+  </footer>
+</div>
+    <br>
+<div class="card">
+  <header class="card-header">
+    <p class="card-header-title">
+      American History<span style="color:red;">[AGES 10+]</span>
+    </p>
+  </header>
+  <div class="card-content">
+    <div class="content">
+      Games about various US History topics! (Subjects: Social Studies)
+    </div>
+  </div>
+  <footer class="card-footer">
+    <a href="/redir/civilwar.html" class="card-footer-item">Play Civil War</a>
+    <a href="/redir/usrev.html" class="card-footer-item">Play American Revolution</a>
+  </footer>
+</div>
+    <br>
+    <div class="card">
+  <header class="card-header">
+    <p class="card-header-title">
+      Math Chess
+    </p>
+  </header>
+  <div class="card-content">
+    <div class="content">
+      Play chess while answering math problems! (Subjects: Multiplication)
+    </div>
+  </div>
+  <footer class="card-footer">
+    <a href="/games/chess.html" class="card-footer-item">Play</a>
+    <a href="/games/multichess.html" class="card-footer-item">Play Multiplayer</a>
+  </footer>
+</div>
+    <br>
+    <div class="card">
+  <header class="card-header">
+    <p class="card-header-title">
+      Math Snake
+    </p>
+  </header>
+  <div class="card-content">
+    <div class="content">
+      Play Snake while answering math problems! (Subjects: Multiplication)
+    </div>
+  </div>
+  <footer class="card-footer">
+    <a href="/games/snake.html" class="card-footer-item">Play</a>
+  </footer>
+</div>
+    <br>
+    <div class="card">
+  <header class="card-header">
+    <p class="card-header-title">
+      Logic Villages <span style="color:blue;">[POPULAR]</span>
+    </p>
+  </header>
+  <div class="card-content">
+    <div class="content">
+      Use logic to build a village by combining squares! (Subjects: Logic)
+    </div>
+  </div>
+  <footer class="card-footer">
+    <a href="/games/village.html" class="card-footer-item">Play</a>
+  </footer>
+</div>
+    <br>
+    <div class="card">
+  <header class="card-header">
+    <p class="card-header-title">
+      Stoneville/Math Cities <span style="color:purple;">[NEW]</span>
+    </p>
+  </header>
+  <div class="card-content">
+    <div class="content">
+      Build your very own city while answering math problems! (Subjects: Multiplication)
+    </div>
+  </div>
+  <footer class="card-footer">
+    <a href="/games/stoneville.html" class="card-footer-item">Play</a>
+    <a href="/games/mathcity.html" class="card-footer-item">Play Math Cities (Archive)</a>
+  </footer>
+</div>
+    <br>
+        <div class="card">
+  <header class="card-header">
+    <p class="card-header-title">
+      Spelling Tacos <span style="color:blue;">[POPULAR]</span>
+    </p>
+  </header>
+  <div class="card-content">
+    <div class="content">
+      Spell a list of customizable spelling words with 80% accuracy or better to get a clipart taco! (Subjects: Spelling)
+    </div>
+  </div>
+  <footer class="card-footer">
+    <a href="/games/spelltaco.html" class="card-footer-item">Play</a>
+  </footer>
+</div>
+    <br>
+
+    <div class="card">
+  <header class="card-header">
+    <p class="card-header-title">
+      Math Wizards
+    </p>
+  </header>
+  <div class="card-content">
+    <div class="content">
+      Move your wizard to the correct platform to earn points (Subjects: Multiplication)
+    </div>
+  </div>
+  <footer class="card-footer">
+    <a href="/games/mathwzrd/mw1.html" class="card-footer-item">Play MW1</a>
+    <a href="/games/mathwzrd/mw1bsfgt.html" class="card-footer-item">Play MW1 Boss Fight</a>
+    
+  </footer>
+</div>
+
+    <br>
+
+    <div class="card">
+  <header class="card-header">
+    <p class="card-header-title">
+      Math Hangman
+    </p>
+  </header>
+  <div class="card-content">
+    <div class="content">
+      Just regular hangman, but with math. (Subjects: Multiplication)
+    </div>
+  </div>
+  <footer class="card-footer">
+    <a href="/games/mathhngmn.html" class="card-footer-item">Play</a>
+  </footer>
+</div>
+
+    <br>
+
+        <div class="card">
+  <header class="card-header">
+    <p class="card-header-title">
+      Count the Change!
+    </p>
+  </header>
+  <div class="card-content">
+    <div class="content">
+      A game about finding the change. (Subjects: Subtraction)
+    </div>
+  </div>
+  <footer class="card-footer">
+    <a href="/games/countchange.html" class="card-footer-item">Play</a>
+  </footer>
+</div>    
+
+    <br>
+
+    <div class="card">
+  <header class="card-header">
+    <p class="card-header-title">
+      Math Tic-Tac-Toe
+    </p>
+  </header>
+  <div class="card-content">
+    <div class="content">
+      Just regular tic-tac-toe, but with math. (Subjects: Addition, Multiplication)
+    </div>
+  </div>
+  <footer class="card-footer">
+    <a href="/games/mathttt.html" class="card-footer-item">Play</a>
+  </footer>
+</div>    
+
+    <br>
+  <center style="color:gray;">Website version 4.2.1</center>
+    <script src="script.js"></script>
+  </div>
+<!--<script src="//code.tidio.co/7hvrbjhayn8dfjgofywvjr5cjdqwk06y.js" async></script>-->
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/653a5740f2439e1631e8ac47/1hdlu9l00';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+</body>
+
+</html>

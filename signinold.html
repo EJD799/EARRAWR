@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>EARR - Sign In</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/x-icon" href="/icons/icon.ico">
+  <link rel="manifest" href="/manifest.webmanifest" />
+</head>
+
+<body>
+  <style>
+    body {
+      background-color: #001719;
+      color: white;
+    }
+    .btn {
+      background-color:dodgerblue;
+      border-radius:6px;
+      border:none;
+      padding:10px;
+      width:150px;
+      color:white;
+      font-size:18px;
+      transition: background-color 0.1s;
+    }
+    .btn:hover {
+      background-color: #59acff;
+      cursor: pointer;
+    }
+    .btn:active {
+      background-color: #1a7bdb;
+    }
+    .menuItem {
+      background-color:white;
+      border-radius:6px;
+      border:none;
+      padding:10px;
+      width:150px;
+      color:black;
+      font-size:18px;
+      transition: background-color 0.1s;
+    }
+    .menuItem:hover {
+      background-color: lightgray;
+      cursor: pointer;
+    }
+    .menuItem:active {
+      background-color: gray;
+    }
+    .btn-disabled {
+      background-color:lightgray;
+      border-radius:6px;
+      border:none;
+      padding:10px;
+      width:150px;
+      color:dimgray;
+      font-size:18px;
+      transition: background-color 0.1s;
+    }
+    h2, h1 {
+      font-family:'sans-serif';
+    }
+    p {
+      font-family:'sans-serif';
+    }
+    .new-tag {
+      background-image: linear-gradient(to left, dodgerblue, blue, rebeccapurple);
+      border-radius: 6px;
+      color: white;
+      font-family: sans-serif;
+      padding: 5px;
+    }
+    input {
+      background-color:#001719;
+      border-radius:6px;
+      border:2px solid #003a40;
+      padding:10px;
+      width:150px;
+      color:white;
+      font-size:18px;
+      transition: background-color 0.1s;
+    }
+  </style>
+    <img src="/icons/logo.png" width="180" height="81"></img><br>
+  <h1>Sign In to EARR Learning</h1>
+  <p>As of January 23, 2023, EARR Learning now requires an account to sign in. Please enter your EARR username and password below to access this game!</p>
+  <input id="usernameBox" placeholder="Username" id="usrBox"><br>
+  <input id="passwordBox" placeholder="Password" type="password" id="passBox"><br><br>
+  <button class="btn" onclick="checkPass();">Sign In</button>
+  <button class="menuItem" onclick="top.location = 'https://games.ejd799.repl.co/'">Cancel</button>
+  <script>
+    var usrBox
+    var passBox
+    const queryString = window.location.search
+    const urlParams = new URLSearchParams(queryString)
+    const gameId = urlParams.get('gameId')
+    function checkPass() {
+      usrBox = document.getElementById("usernameBox").value
+      passBox = document.getElementById("passwordBox").value
+      alert("Username: " + usrBox + "\nPassword: " + passBox)
+      if (usrBox == "EARRPlus") {
+        alert("User Yes")
+        if (passBox == "112322") {
+          alert("Pass yes")
+          top.location = "/games/" + gameId + ".html"
+        } else {
+          alert("Incorrect password!")
+        }
+      } else {
+        alert("Invalid username!")
+      }
+    }
+  </script>
+</body>
+
+</html>

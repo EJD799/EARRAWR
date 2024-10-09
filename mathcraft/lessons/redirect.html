@@ -2,19 +2,74 @@
 <html>
   <head>
     <title>MathCraft Lessons</title>
+    <style>
+      body {
+        background-color: #001719;
+        font-family: sans-serif;
+      }
+      h1 {
+        color: white;
+      }
+      span {
+        color: white;
+      }
+      button {
+        background-color: #00a816;
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 14px;
+        padding-right: 14px;
+        outline: none;
+        border: none;
+      }
+      button:hover {
+        background-color: #4ecf5f;
+        cursor: pointer;
+      }
+      button:active {
+        background-color: #008a12;
+      }
+      input {
+        background-color: #4d4d4d;
+        color: white;
+        padding: 10px;
+        border: 3px solid #828282;
+        outline: none;
+      }
+      input:focus, input:active {
+        border: 3px solid #00a816;
+      }
+    </style>
   </head>
-  <style>
-    body {
-      background-color: #001719;
-    }
-  </style>
+
   <body>
     <center>
-      <img src="/EARRAWR/mathcraft/resources/logo.png"></img>
-      <h2>Welcome to MathCraft Lessons!</h2>
-      <span id="assignmentidtext">Assignment ID: [ASSIGNMENT_ID]</span>
-      <input type="text" id="namebox" placeholder="Your Name"></input>
-      <button onclick="startlesson()">Start Lesson</button>
+      <br><br>
+      <img src="https://ejd799.github.io/EARRAWR/mathcraft/resources/logo.png"></img>
+      <h1>Welcome to MathCraft Lessons!</h1>
+      <span id="assignmentidtext">Assignment Name: [ASSIGNMENT_ID]</span><br>
+      <span id="assignmentcreatortext">Assigned by: [ASSIGNMENT_CREATOR]</span><br><br>
+      <input type="text" id="namebox" placeholder="Your Name" required></input><br><br>
+      <button onclick="startLesson()">Start Lesson</button>
     </center>
+    <script>
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      var assignment_id = urlParams.get('assignmentid');
+      var assignment_creator = urlParams.get('assignmentcreator');
+      var assignment_id_text = document.getElementById("assignmentidtext");
+      var assignment_creator_text = document.getElementById("assignmentcreatortext");
+      var namebox = document.getElementById("namebox");
+      assignment_id_text.innerText = "Assignment Name: " + assignment_id;
+      assignment_creator_text.innerText = "Assigned by: " + assignment_creator;
+      function startLesson() {
+        if (namebox.value != "") {
+          location = "https://ejd799.github.io/EARRAWR/mathcraft/launchlatest.html?assignmentid=" + assignment_id + "&name=" + namebox.value;
+        } else {
+          alert("A name is required!");
+        }
+      }
+    </script>
   </body>
 </html>

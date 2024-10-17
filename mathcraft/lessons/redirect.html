@@ -65,7 +65,7 @@
       assignment_creator_text.innerText = "Assigned by: " + assignment_creator;
       function startLesson() {
         if (namebox.value != "") {
-          location = "https://ejd799.github.io/EARRAWR/mathcraft/launchlatest.html?assignmentid=" + assignment_id + "&name=" + namebox.value;
+          location = "https://ejd799.github.io/EARRAWR/mathcraft/launchlatest.html?assignmentcreator=" + assignment_creator + "&assignmentid=" + assignment_id + "&studentname=" + namebox.value;
         } else {
           alert("A name is required!");
         }

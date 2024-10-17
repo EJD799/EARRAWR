@@ -1,0 +1,8 @@
+<script>
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      var assignment_id = urlParams.get('assignmentid');
+      var assignment_creator = urlParams.get('assignmentcreator');
+      var student_name = urlParams.get('studentname');
+      location = "https://ejd799.github.io/EARRAWR/mathcraft/launchlatest.html?assignmentcreator=" + assignment_creator + "&assignmentid=" + assignment_id + "&studentname=" + namebox.value;
+</script>

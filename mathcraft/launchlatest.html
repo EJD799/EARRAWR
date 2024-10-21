@@ -1,8 +1,18 @@
 <script>
-      const queryString = window.location.search;
-      const urlParams = new URLSearchParams(queryString);
-      var assignment_id = urlParams.get('assignmentid');
-      var assignment_creator = urlParams.get('assignmentcreator');
-      var student_name = urlParams.get('studentname');
-      location = "https://aesthetic-cactus-7bb980.netlify.app/mathcraft%20v1.44.0.html?assignmentcreator=" + assignment_creator + "&assignmentid=" + assignment_id + "&studentname=" + namebox.value;
+      try {
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            var assignment_id = urlParams.get('assignmentid');
+            var assignment_creator = urlParams.get('assignmentcreator');
+            var student_name = urlParams.get('studentname');
+            function doredirect() {
+                  location = "https://aesthetic-cactus-7bb980.netlify.app/mathcraft%20v1.44.0.html?assignmentcreator=" + assignment_creator + "&assignmentid=" + assignment_id + "&studentname=" + namebox.value;
+            }
+            document.setTimeout(doredirect, 1000);
+      } catch(error) {
+            alert("Error: " + error);
+      }
 </script>
+<h2>Redirecting you now...</h2>
+<p>If you are not redirected automatically, click</p><button onclick="doredirect();">here</button><br>
+<p>NOTE: MathCraft may take a long time to load.</p>

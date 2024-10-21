@@ -7,8 +7,7 @@
             var student_name = urlParams.get('studentname');
             function doredirect() {
                   try {
-                        window.open("https://aesthetic-cactus-7bb980.netlify.app/mathcraft%20v1.44.0.html?assignmentcreator=" + assignment_creator + "&assignmentid=" + assignment_id + "&studentname=" + student_name);
-                        window.close();
+                        location = "https://aesthetic-cactus-7bb980.netlify.app/mathcraft%20v1.44.0.html?assignmentcreator=" + assignment_creator + "&assignmentid=" + assignment_id + "&studentname=" + student_name;
                   } catch(error) {
                         alert("Error in function: " + error);
                   }      

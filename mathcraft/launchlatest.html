@@ -8,7 +8,7 @@
             function doredirect() {
                   location = "https://aesthetic-cactus-7bb980.netlify.app/mathcraft%20v1.44.0.html?assignmentcreator=" + assignment_creator + "&assignmentid=" + assignment_id + "&studentname=" + namebox.value;
             }
-            document.setTimeout(doredirect, 1000);
+            window.setTimeout(doredirect, 1000);
       } catch(error) {
             alert("Error: " + error);
       }

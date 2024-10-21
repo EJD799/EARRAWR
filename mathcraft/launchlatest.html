@@ -6,8 +6,12 @@
             var assignment_creator = urlParams.get('assignmentcreator');
             var student_name = urlParams.get('studentname');
             function doredirect() {
-                  window.open("https://aesthetic-cactus-7bb980.netlify.app/mathcraft%20v1.44.0.html?assignmentcreator=" + assignment_creator + "&assignmentid=" + assignment_id + "&studentname=" + namebox.value);
-                  window.close();
+                  try {
+                        window.open("https://aesthetic-cactus-7bb980.netlify.app/mathcraft%20v1.44.0.html?assignmentcreator=" + assignment_creator + "&assignmentid=" + assignment_id + "&studentname=" + namebox.value);
+                        window.close();
+                  } catch(error) {
+                        alert("Error in function: " + error);
+                  }      
             }
             window.setTimeout(doredirect, 1000);
       } catch(error) {
